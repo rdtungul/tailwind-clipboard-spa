@@ -2,10 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* ===== HEADING 3 */
+  h3 {
+    @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
+  }
+}
+
 body {
   backgound-image: url("./images/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+/* ========== SECTION CONTAINER */
+.section-container {
+  @apply max-w-6xl mx-auto text-center;
+}
+
+/* ========== BUTTON CONTAINER */
+.button-container {
+  @apply flex flex-col justify-center w-full space-y-6 text-white md:flex-row md:space-y-0 md:space-x-4;
 }
 
 @media (min-width: 576px) {
