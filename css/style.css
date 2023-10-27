@@ -825,6 +825,10 @@ h3 {
   display: none;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-3xl {
   max-width: 48rem;
 }
@@ -2406,7 +2410,7 @@ h3 {
 }
 
 body {
-  backgound-image: url("./images/bg-header-desktop.png");
+  background-image: url("/images/bg-header-desktop.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -2457,7 +2461,7 @@ body {
 
 @media (min-width: 576px) {
   body {
-    backgound-image: url("./images/bg-header-mobile.png");
+    background-image: url("/images/bg-header-mobile.png");
   }
 }
 
