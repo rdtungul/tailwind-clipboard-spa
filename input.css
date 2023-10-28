@@ -24,13 +24,36 @@ body {
 }
 
 /* ========== SECTION PARAGRAPH TEXT */
-.section-text {
+.section-text-primary {
   @apply max-w-3xl mx-auto text-2xl text-grayishBlue;
 }
+.section-text-secondary {
+  @apply max-w-3xl mx-auto text-xl text-grayishBlue;
+}
 
+/* ========== BUTTON CLASSES */
+.button-class {
+  @apply p-4 px-8 duration-200 rounded-full shadow-lg hover:opacity-90;
+}
+
+/* ========== FOOTER MENUS */
+.footer-menus {
+  @apply flex flex-col space-y-4 text-center md:text-left;
+}
+
+/* ========== ITEMS CENTER */
+.align-items-center {
+  @apply flex flex-col items-center justify-between;
+}
 /* ========== BUTTON CONTAINER */
 .button-container {
   @apply flex flex-col justify-center w-full space-y-6 text-white md:flex-row md:space-y-0 md:space-x-4;
+}
+
+/* ========== FOOTER ICONS (HOVER EFFECTS) */
+.ficon:hover {
+  filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
+    brightness(101%) contrast(94%);
 }
 
 @media (min-width: 576px) {
